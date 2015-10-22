@@ -1,0 +1,27 @@
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\bin\Debug\Polybius.exe.config
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\bin\Debug\Polybius.exe
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\bin\Debug\Polybius.pdb
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\obj\Debug\Polybius.csprojResolveAssemblyReference.cache
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\obj\Debug\Polybius.Form1.resources
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\obj\Debug\Polybius.Properties.Resources.resources
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\obj\Debug\Polybius.csproj.GenerateResource.Cache
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\obj\Debug\Polybius.exe
+E:\Workspace\Компьютерная безопасность\Polybius\Polybius\obj\Debug\Polybius.pdb
+C:\Users\Сергей\Desktop\Polybius\Polybius\bin\Debug\Polybius.exe.config
+C:\Users\Сергей\Desktop\Polybius\Polybius\obj\Debug\Polybius.exe
+C:\Users\Сергей\Desktop\Polybius\Polybius\obj\Debug\Polybius.pdb
+C:\Users\Сергей\Desktop\Polybius\Polybius\bin\Debug\Polybius.exe
+C:\Users\Сергей\Desktop\Polybius\Polybius\bin\Debug\Polybius.pdb
+C:\Users\Сергей\Desktop\Polybius\Polybius\obj\Debug\Polybius.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\Polybius\Polybius\obj\Debug\Polybius.Form1.resources
+C:\Users\Сергей\Desktop\Polybius\Polybius\obj\Debug\Polybius.Properties.Resources.resources
+C:\Users\Сергей\Desktop\Polybius\Polybius\obj\Debug\Polybius.csproj.GenerateResource.Cache
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\bin\Debug\Polybius.exe.config
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\obj\Debug\Polybius.exe
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\obj\Debug\Polybius.pdb
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\bin\Debug\Polybius.exe
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\bin\Debug\Polybius.pdb
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\obj\Debug\Polybius.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\obj\Debug\Polybius.Form1.resources
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\obj\Debug\Polybius.Properties.Resources.resources
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\КБ\Лабораторная работа №3\Polybius\obj\Debug\Polybius.csproj.GenerateResource.Cache
