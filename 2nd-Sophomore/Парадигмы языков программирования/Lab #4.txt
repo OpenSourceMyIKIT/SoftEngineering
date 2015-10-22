@@ -1,0 +1,94 @@
+Вариант 17
+
+Аргумент, значением которого является функция называется фун. аргументом. Функцию,
+имеющую фун. аргумент, называют функционалом.
+
+Применяющие функционалы:
+1) (apply fn список) каждому элементу списка будет применена функция
+   (apply '+ '(4 5 6))
+
+2) (defun f(x)
+	(cond ((null x) 'end)
+		(T (print (apply (car x) '(2 3))) (f (cdr x)))))
+		(f '(+-*/))
+
+Отображающие функционалы:
+1) (mapx fn list1 list2 listn)
+   (mapcar fn '(x11 x12 x13) '(x21 x22 x23))
+   (mapcar '+ '(1 2 3) '(1 2 3))
+
+2) (maplist fn '(x11 x12) '(x21 x22))
+   (maplist 'reverse '(1 2))
+
+Task 1
+
+Возвращение первого атома списка с учетом многоуровневости списка
+
+(defun f(l) (if (null l) nil (if (atom l) l (f (car l)))))
+
+Task 2
+
+Удаление из списка первого вхождения данного элемента на верхнем уровне
+
+(defun del (lst target)
+   (if (equal (car lst) target)
+     (cdr lst)
+     (setq x (cons (car lst) (del (cdr lst) target)))
+   )
+)
+
+Task 3
+
+Обращение списка и  разбиение его на уровни.
+Например:  (ОБРАЩ_РАЗБ  '(1 2 3 4)) -> ((((4) 3) 2) 1)
+
+(defun f (L) 
+ (cond 
+  ((null L) nil) 
+  ((null (cdr L)) L) 
+  (T (list (f (cdr L)) (car L)))
+ )
+)
+
+Task 4
+
+Преобразование списка (А В С) к виду (А (В (С))).
+Например:  (РАЗБИВКА  '(a b c)) -> (A (B (C)))
+
+(defun f (L) 
+ (cond 
+  ((null L) nil) 
+  ((null (cdr L)) L) 
+  (T (list (car L) (f (cdr L))))
+ )
+)
+
+Task 5
+
+Определите функционал (MAPLIST fn список) для одного списочного аргумента.
+
+(defun maplist1 (fn l)
+   (COND 
+     ((NULL L) NIL)
+     (t (list (funcall fn l) (maplist1 fn (cdr l ))))
+   )
+)
+
+(defun plus (x) (cdr x))
+(maplist (function plus) '(1 2 3 4 5 6))
+
+Task 6
+
+С помощью отображающих функционалов определите функцию
+(УДАЛИТЬ-ЕСЛИ пред список), удаляющую из списка элементы, 
+которые обладают свойством, наличие которого проверяет предикат.
+
+(defun del-if (p l) 
+    (cond 
+        ((null l) nil) 
+        ((funcall p (car l)) (del-if p (cdr l))) 
+        (t (cons (car l) (del-if p (cdr l))))
+    )
+) 
+
+(del-if 'oddp '(1 2 3 4 5 6))
