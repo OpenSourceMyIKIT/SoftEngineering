@@ -1,0 +1,8 @@
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\bin\Release\Лабораторная работа №2.exe.config
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\bin\Release\Лабораторная работа №2.exe
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\bin\Release\Лабораторная работа №2.pdb
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\obj\Release\Лабораторная_работа__2.Form1.resources
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\obj\Release\Лабораторная_работа__2.Properties.Resources.resources
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\obj\Release\Лабораторная работа №2.csproj.GenerateResource.Cache
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\obj\Release\Лабораторная работа №2.exe
+C:\Users\Сергей\Documents\Visual Studio 2015\Projects\ООП\Лабораторная работа №2\Лабораторная работа №2\obj\Release\Лабораторная работа №2.pdb
