@@ -1,0 +1,864 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="File-List" href="08.files/filelist.xml">
+
+<title>Антивирусные средства</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+p.a
+	{margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	}
+p.MsoBodyTextIndent3
+	{margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	layout-grid-mode:line; margin-left:0cm; margin-right:0cm; margin-top:0cm}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+p.MsoHeading8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:-72.0pt;
+	page-break-after:avoid;
+	tab-stops:list 72.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	layout-grid-mode:line;
+	font-weight:bold;
+	}
+p.MsoFootnoteText
+	{margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+p.MsoEndnoteText
+	{margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+span.MsoFootnoteReference
+	{vertical-align:super}
+p.MsoBodyTextIndent
+	{margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+p.MsoBodyText2
+	{margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+-->
+</style>
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body stylesrc="../index.htm" bgcolor="#025A9B" background="../images/fon.jpg" bgproperties="fixed">
+
+<p align="center" style="text-align: center; line-height: 150%; margin-left: 0cm" class="a">
+&nbsp;</p>
+
+<p align="center" style="text-align: center; line-height: 150%; margin-left: 0cm" class="a">
+<span style="letter-spacing: 1.0pt"><font color="#FFFFFF" size="4" face="Arial">
+<a name="8__1"></a></font></span><font color="#FFFFFF"><b>
+<span style="font-size: 14.0pt; font-family: Arial">Лабораторная работа №1</span></b></font></p>
+<p class="a" align="center" style="text-align: center; margin-left: 0cm">
+<font color="#FFFFFF"><b><span style="font-size: 14.0pt; font-family: Arial">
+Установка, настройка и сопровождение антивирусных программ на примере пакетов 
+Antiviral Toolkit Pro и Doctor WEB</span></b></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Цель работы: </u></span></font></p>
+<p class="MsoNormal" style="margin-left:36.0pt;text-align:justify">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Научиться 
+использовать: устанавливать, настраивать и обновлять базы данных сигнатур 
+вирусов, существующих и наиболее широко распространенных антивирусных программ.</span></font></p>
+<p class="a"><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400"><u>Необходимое аппаратное и программное 
+обеспечение:</u></span></font></p>
+<p class="MsoNormal" style="margin-left:36.0pt;text-align:justify;text-indent:
+36.0pt"><font color="#FFFFFF"><span style="font-size: 14.0pt">IBM-совместимые 
+компьютеры, не ниже Pentium, объединенные в сеть. Операционная система на 
+которую будут устанавливаться антивирусные пакеты (Windows или </span>
+<span lang="EN-US" style="font-size: 14.0pt">Linux</span><span style="font-size: 14.0pt">). 
+Инсталляционные файлы антивирусных пакетов (AVP, Doctor Web). Несколько 
+инфицированных файлов.</span></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Порядок выполнения работы</u></span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Установка настройка и 
+сопровождение антивирусного пакета является не таким простым делом как это может 
+показаться на первый взгляд. Действительно установка практически любого 
+антивирусного пакета больших проблем обычно не вызывает, но чаще всего 
+пользователь этим и ограничивается. </span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Получается, что 
+антивирусный пакет работает с теми установками и параметрами, которые были 
+заложены производителем и которые на системе пользователя, могут быть не нужны, 
+или не эффективны, или наоборот должны быть включены дополнительные опции.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Изучение настроек 
+антивирусных программ и их правильное использование являются целью данной 
+лабораторной работы.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Так как возможности 
+современных антивирусных пакетов имеют между собой много общего, то в целях, 
+демонстрации работы с антивирусными пакетами используется продукт «AVP» 
+Лаборатории Касперского.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Антивирусный пакет данной 
+компании включает в себя две основных антивирусных программы, получивших 
+наибольшее распространение – это антивирусный сканер (AVP сканер) и антивирусный 
+монитор (AVP монитор).</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Остальные программы, 
+устанавливаемые при инсталляции, лишь предоставляют пользователю некоторые 
+дополнительные возможности по управлению приложениями всего пакета в целом или 
+отдельных его компонент.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Рассмотрим подробнее 
+возможности работы пользователя с антивирусным ревизором на примере программы «AVP 
+сканер» из вышеозначенного пакета.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">В момент запуска программы 
+на выполнение, «AVP сканер» автоматически тестирует оперативную память 
+компьютера на наличие вирусов, проверяет включена ли защита от макровирусов в 
+приложениях Microsoft Office, а также проверяет целостность своих модулей, 
+которые могут быть повреждены при обновлении вирусных баз данных или самими 
+вирусами.</span></font></p>
+<p class="MsoBodyTextIndent3"><font color="#FFFFFF">
+<span style="font-size: 14.0pt; layout-grid-mode: both">В результате на экран 
+выводится&nbsp; окно, которое показано на рис. 5</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">В самом низу окна 
+отображается дата последнего обновления вирусных баз данных, а также количество 
+вирусов, которые может обнаружить данный антивирус.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+&nbsp;</p>
+<p class="MsoBodyTextIndent3" align="center" style="text-indent: 0; text-align: center"><font color="#FFFFFF"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1035" type="#_x0000_t75" alt="" style='width:366pt;
+ height:243pt;visibility:visible;mso-wrap-edited:f;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text' o:allowincell="f">
+ <v:imagedata src="08.files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=488 height=324
+src="08.files/image002.jpg" v:shapes="_x0000_s1035"><![endif]><span style="font-size: 14.0pt; layout-grid-mode: both">&nbsp;</span></font></p>
+<p class="MsoBodyTextIndent3" style="text-indent: 0; text-align: center"><font color="#FFFFFF">
+<span style="font-size: 14.0pt; layout-grid-mode: both">Рис. 5</span></font></p>
+<p><font color="#FFFFFF"><span style="font-size: 14.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 14.0pt; layout-grid-mode: both">Меню, 
+находящееся в самом верху экрана, содержит основные команды, доступ к которым 
+можно получить также через различные визуальные элементы, расположенные на 
+форме.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Чуть ниже основного меню, 
+тоже в верхней части окна расположены закладки, переключившись на которые можно 
+настроить соответствующие параметры.</span></font></p>
+<p class="MsoBodyTextIndent3"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">Закладки и их назначение занесены в табл. 3. 
+Более подробную информацию о всех интересующих параметрах можно найти в 
+справочной системе антивирусной программы.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Как уже отмечалось 
+неоднократно, необходимо помнить, что изменения настроек могут привести как к 
+существенному повышению эффективности работы антивирусной программы, так и к 
+снижению уровня защищенности компьютера от вирусов.</span></font></p>
+<p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" align="right" style="margin-left: -7.1pt">
+<font color="#FFFFFF">
+<span style="font-size: 14.0pt; position: relative; top: -10.0pt">&nbsp;&nbsp;&nbsp; Таблица 3</span></font></p>
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-style: solid; padding: 0" width="100%" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="349">
+  <tr>
+    <td style="width: 100; border-left-style: solid; border-left-width: 1.5pt; border-right-style: solid; border-right-width: 1.0pt; border-top-style: solid; border-top-width: 1.5pt; border-bottom-style: solid; border-bottom-width: 1.5pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoHeading8" style="text-align: justify; text-indent: 0cm; margin-left: 0cm">
+    <font color="#FFFFFF">
+    <span style="font-size: 14.0pt; layout-grid-mode: both; ">
+    Закладка</span></font></td>
+    <td style="width: 581; border-left: medium none; border-right-style: solid; border-right-width: 1.5pt; border-top-style: solid; border-top-width: 1.5pt; border-bottom-style: solid; border-bottom-width: 1.5pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt; font-weight:700">Функциональное назначение</span></font></td>
+  </tr>
+  <tr style="height:107.45pt">
+    <td valign="top" style="width: 100; border-left-style: solid; border-left-width: 1.5pt; border-right-style: solid; border-right-width: 1.0pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Область</span></font></td>
+    <td valign="top" style="border-left: medium none; border-right-style: solid; border-right-width: 1.5pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Позволяет задать диски или каталоги, которые 
+    будут проверяться на наличие вирусов. Выбрать диск для проверки, можно 
+    дважды щелкнув на нем левой кнопкой мыши. Каталог добавляется путем выбора 
+    его в окне появляющемся при&nbsp; нажатии кнопки «Добавить папку». Объекты, 
+    выделенные для проверки, обозначаются синей галочкой.</span></font></td>
+  </tr>
+  <tr>
+    <td valign="top" style="width: 100; border-left-style: solid; border-left-width: 1.5pt; border-right-style: solid; border-right-width: 1.0pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Объекты</span></font></td>
+    <td valign="top" style="border-left: medium none; border-right-style: solid; border-right-width: 1.5pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">На данной закладке можно указать какие 
+    объекты в выбранной области подлежат проверки.</span></font></td>
+  </tr>
+  <tr>
+    <td valign="top" style="width: 100; border-left-style: solid; border-left-width: 1.5pt; border-right-style: solid; border-right-width: 1.0pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Действия</span></font></td>
+    <td valign="top" style="border-left: medium none; border-right-style: solid; border-right-width: 1.5pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Позволяет определять пользователю, какие 
+    действия должны предприниматься при обнаружении вируса.</span></font></td>
+  </tr>
+  <tr>
+    <td valign="top" style="width: 100; border-left-style: solid; border-left-width: 1.5pt; border-right-style: solid; border-right-width: 1.0pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Параметры</span></font></td>
+    <td valign="top" style="border-left: medium none; border-right-style: solid; border-right-width: 1.5pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Здесь можно изменить некоторые настройки, 
+    которые практически не влияют на эффективность обнаружения вирусов, но могут 
+    оказаться полезными пользователю.</span></font></td>
+  </tr>
+  <tr>
+    <td valign="top" style="width: 100; border-left-style: solid; border-left-width: 1.5pt; border-right-style: solid; border-right-width: 1.0pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.5pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">Статистика</span></font></td>
+    <td valign="top" style="border-left: medium none; border-right-style: solid; border-right-width: 1.5pt; border-top: medium none; border-bottom-style: solid; border-bottom-width: 1.5pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+    <p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+    <span style="font-size: 14.0pt">На данной закладке отображаются результаты 
+    работы антивирусной программы.</span></font></td>
+  </tr>
+</table>
+<p class="MsoFootnoteText" style="text-indent:0cm"><font color="#FFFFFF">&nbsp;</font></p>
+<p class="a"><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400"><u>Задание:</u></span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Определить каким образом 
+изменение каких-либо параметров, влияет на эффективность работы антивирусной 
+программы, и найти оптимальный по соотношению вариант: скорость сканирования / 
+уровень защищенности.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Для определения 
+правильности настроек, пользователю предлагается набор файлов, часть из которых 
+являются инфицированными, т.е. заражены каким-либо вирусом. Обнаружение всех 
+таких файлов и является конечным результатом данной лабораторной работы. С 
+настройками антивирусной программы «AVP монитор» предлагается ознакомиться 
+самостоятельно. Также самостоятельно рекомендуется ознакомиться с возможностями 
+других антивирусных пакетов, таких как DrWeb, McAfee, Norton AntiVirus и т.д., а 
+также провести сравнительный анализ эффективности их работы.</span></font></p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14pt">
+<applet code="fphover.class" codebase="../" width="120" height="24">
+  <param name="textcolor" value="#FFFFFF">
+  <param name="text" value="содержание">
+  <param name="bgcolor" value="#FF0000">
+  <param name="effect" value="lightGlow">
+  <param name="hovercolor" value="#FFFFFF">
+  <param name="color" value="#FF9900">
+  <param name="font" value="Dialog">
+  <param name="fontstyle" value="bold">
+  <param name="fontsize" value="14">
+  <param name="url" valuetype="ref" value="main.htm#8">
+</applet></span></font></p>
+
+<p class="MsoNormal" style="text-align: justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" style="text-align:justify">&nbsp;</p>
+<h1 style="line-height: 150%" align="center"><font color="#FFFFFF"><b>
+<span style="font-size: 14.0pt; font-family: Arial"><a name="8__2"></a>
+Лабораторная работа №2</span></b></font></h1>
+<p class="a" align="center" style="text-align: center; margin-left: 0cm">
+<font color="#FFFFFF"><b><span style="font-size: 14.0pt; font-family: Arial">
+Проверка целостности содержимого загрузочного сектора</span></b></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Цель работы: </u></span></font></p>
+<p class="MsoNormal" style="margin-left:36.0pt;text-align:justify;text-indent:
+36.0pt"><font color="#FFFFFF"><span style="font-size: 14.0pt">Основная цель 
+работы заключается в изучении программных пакетов, предназначенных для работы с 
+диском на низком уровне, изучении логического устройства жесткого диска, и 
+конкретно той его части, которая касается главной загрузочной записи (</span><span lang="EN-US" style="font-size: 14.0pt">MBR</span><span style="font-size: 14.0pt">) 
+и загрузочной записи операционной системы (</span><span lang="EN-US" style="font-size: 14.0pt">Boot</span><span style="font-size: 14.0pt">-сектор). 
+Другой целью является обнаружение присутствия загрузочных вирусов и изучение 
+возможных способов их обезвреживания.</span></font></p>
+<p class="a"><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400"><u>Необходимое аппаратное и программное 
+обеспечение:</u></span></font></p>
+<p class="MsoNormal" style="margin-left:36.0pt;text-align:justify;text-indent:
+36.0pt"><font color="#FFFFFF"><span style="font-size: 14.0pt">IBM-совместимые 
+компьютеры, не ниже Pentium, объединенные в сеть. Операционная система </span>
+<span lang="EN-US" style="font-size: 14.0pt">MS</span><span style="font-size: 14.0pt">-</span><span lang="EN-US" style="font-size: 14.0pt">DOS</span><span style="font-size: 14.0pt"> 
+или Windows. Наличие «чистых» образов загрузочных секторов нескольких 
+операционных систем и наличие «инфицированных» образов загрузочных секторов этих 
+операционных систем различными вариантами загрузочных вирусов. Программный пакет 
+«</span><span lang="EN-US" style="font-size: 14.0pt">Disk Editor</span><span style="font-size: 14.0pt">» 
+фирмы </span><span lang="EN-US" style="font-size: 14.0pt">Symantec</span><span style="font-size: 14.0pt"> 
+или любая другая программа, позволяющая работать с диском на низком уровне.</span></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Порядок выполнения работы</u></span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">В загрузочных секторах 
+дисков расположены небольшие программы, предназначенные для определения границ 
+логических дисков и загрузки первого сектора логического диска, содержащего 
+операционную систему. Дамп такой программы, взятый с </span>
+<span lang="EN-US" style="font-size: 14.0pt">boot</span><span style="font-size: 14.0pt">-сектора 
+загрузочной дискеты для операционной системы </span>
+<span lang="EN-US" style="font-size: 14.0pt">Windows</span><span style="font-size: 14.0pt"> 
+98, приведен на следующей странице.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Для исследования 
+рекомендуется использовать программу «</span><span lang="EN-US" style="font-size: 14.0pt">Disk 
+Editor</span><span style="font-size: 14.0pt">» фирмы </span>
+<span lang="EN-US" style="font-size: 14.0pt">Symantec</span><span style="font-size: 14.0pt"> 
+из пакета «</span><span lang="EN-US" style="font-size: 14.0pt">Norton Utility</span><span style="font-size: 14.0pt">», 
+или любую аналогичную программу, которой отдает предпочтение пользователь или 
+которая ему более доступна.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Исследование системы на 
+наличие загрузочного вируса лучше начать с изучения загрузочных секторов дисков. 
+Определить загрузочный сектор можно по наличию кода 55 </span>
+<span lang="EN-US" style="font-size: 14.0pt">AA</span><span style="font-size: 14.0pt">, 
+который всегда присутствует в конце загрузочного сектора, на дампе загрузочного 
+сектора&nbsp; он обведен самым маленьким кружком. В загрузочных секторах, как 
+правило, всегда присутствует некоторая текстовая информация, которую можно 
+обнаружить обычным просмотром, в нашем примере эта часть обведена двумя 
+наибольшими кружками. К такой информации, например, относится строка с 
+информацией о фирме производителе и названии операционной системы –</span><span lang="EN-US" style="font-size: 14.0pt">PMSWIN</span><span style="font-size: 14.0pt">4.1, 
+она расположена в самых первых байтах загрузочного сектора. Другой текстовой 
+информацией являются имена системных файлов, в нашем случае это </span>
+<span lang="EN-US" style="font-size: 14.0pt">IO</span><span style="font-size: 14.0pt">.</span><span lang="EN-US" style="font-size: 14.0pt">SYS</span><span style="font-size: 14.0pt"> 
+и </span><span lang="EN-US" style="font-size: 14.0pt">MSDOS</span><span style="font-size: 14.0pt">.</span><span lang="EN-US" style="font-size: 14.0pt">SYS</span><span style="font-size: 14.0pt">, 
+а также строки с сообщениями об ошибках, типа – </span>
+<span lang="EN-US" style="font-size: 14.0pt">Invalid system disk</span><span style="font-size: 14.0pt"> 
+и др. Как следствие, отсутствие подобной информации в загрузочном секторе должно 
+насторожить пользователя, т.к. может являться следствием появления в системе 
+загрузочного вируса. Кроме того, многие загрузочные вирусы добавляют в 
+загрузочную запись свои текстовые сообщения. Этот вариант определения наличия 
+вирусов является наиболее простым и в большинстве случаев достаточным для 
+составления заключения о том есть в системе загрузочный вирус или его там нет. 
+Варианты обнаружения загрузочных вирусов с более эффективными алгоритмами своей 
+защиты здесь пока рассматриваться не будут. Однако стоит отметить, что данный 
+вариант не гарантирует 100% успеха в обнаружении всех загрузочных вирусов. 
+Некоторые из них, использующие оригинальные алгоритмы, изменяют загрузочную 
+запись в минимальном объеме. Так существуют вирусы, которые изменяют всего 3 
+байта в загрузочной записи, которые указывают на месторасположение загрузчика 
+операционной системы. И обнаружить это визуально практически невозможно. 
+Обратите особое внимание и на то, что главная загрузочная запись может быть 
+модифицирована установленным у пользователя программным продуктом, например, 
+каким-либо антивирусным монитором или системой защиты. Программы, 
+предназначенные для установки на компьютер нескольких операционных систем, также 
+изменяют загрузочную запись. Во всех вышеперечисленных случаях информация, 
+содержащаяся в измененной записи, может кардинально отличаться от стандартной 
+главной загрузочной записи, создаваемой операционной системой при инсталляции.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Дамп «чистого» 
+загрузочного сектора ОС </span><span lang="EN-US" style="font-size: 14.0pt">
+Windows</span><span style="font-size: 14.0pt"> 98</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+&nbsp;</p>
+<p class="a" align="center" style="text-align: center; margin-left: 0cm; margin-right: 0cm; margin-top: 0cm; margin-bottom: .0001pt"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1037" type="#_x0000_t75" alt="" style='width:459pt;height:348.75pt'
+ stroked="t" strokecolor="#f90" strokeweight="1.5pt">
+ <v:imagedata src="08.files/image003.png" o:title="" croptop="19048f"
+  cropbottom="7590f" cropleft="15580f" cropright="11549f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=616 height=469
+src="08.files/image004.jpg" v:shapes="_x0000_s1037"><![endif]></p>
+<p class="MsoNormal" style="text-align:justify">&nbsp;</p>
+<p class="MsoNormal" style="text-align:justify">&nbsp;</p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Наиболее часто 
+используемым способом восстановления загрузочной записи на пораженном компьютере 
+является восстановление стандартной записи создаваемой операционной системой. 
+Восстановление осуществляется следующей командой: С:\&gt;</span><span lang="EN-US" style="font-size: 14.0pt">FDISK</span><span style="font-size: 14.0pt"> 
+/</span><span lang="EN-US" style="font-size: 14.0pt">MBR</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Особое внимание здесь надо 
+обратить на параметр /</span><span lang="EN-US" style="font-size: 14.0pt">MBR</span><span style="font-size: 14.0pt">, 
+т.к. он является недокументированным параметром стандартной команды </span>
+<span lang="EN-US" style="font-size: 14.0pt">FDISK</span><span style="font-size: 14.0pt"> 
+любой операционной системы фирмы </span>
+<span lang="EN-US" style="font-size: 14.0pt">Microsoft</span><span style="font-size: 14.0pt">, 
+а, следовательно, и обращаться с ним нужно осторожно. Последствием неправильного 
+срабатывания данной команды может стать потеря информации всего жесткого диска. 
+С целью предотвращения таких последствий вначале рекомендуется сохранить 
+существующую, на данный момент, загрузочную запись в какой-либо файл на обычной 
+дискете, в дальнейшем при неудачном лечении ее всегда можно будет восстановить 
+из такого файла. Кроме того, восстановление загрузочной записи может 
+потребоваться и в том случае, если вирус использует какой-либо алгоритм, 
+блокирующий работу пользователя при удалении его копии из загрузочной записи. 
+Примером может служить вирус </span>
+<span lang="EN-US" style="font-size: 14.0pt">OneHalf</span><span style="font-size: 14.0pt">, 
+который шифрует информацию на жестком диске, и при удалении расшифровщика из 
+загрузочного сектора, часть информации, хранимой на жестком диске, становится 
+недоступна пользователю. В этом случае обычно необходимо разбираться с 
+программным кодом самого вируса, поэтому наилучшим вариантом будет приглашение 
+специалиста по антивирусной защите данных.</span></font></p>
+<p class="a" align="center" style="margin:0cm;margin-bottom:.0001pt;text-align:
+center"><font color="#FFFFFF"><a name="_Toc172077">
+<span style="font-size: 14.0pt; font-family: Times New Roman; font-weight: normal">
+&nbsp;</span></a></font></p>
+<p class="a" align="center" style="margin:0cm;margin-bottom:.0001pt;text-align:
+center"><font color="#FFFFFF">
+<span style="font-size: 14.0pt; font-family: Times New Roman; font-weight: normal">
+Дамп загрузочного сектора </span>
+<span lang="EN-US" style="font-size: 14.0pt; font-family: Times New Roman; font-weight: normal">
+OC Windows</span><span style="font-size: 14.0pt; font-family: Times New Roman; font-weight: normal"> 
+98 инфицированный вирусом </span></font></p>
+<p class="a" align="center" style="margin:0cm;margin-bottom:.0001pt;text-align:
+center"><font color="#FFFFFF">
+<span lang="EN-US" style="font-size: 14.0pt; font-family: Times New Roman; font-weight: normal">
+«AntiExe.e»</span></font></p>
+<p align="center"><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1036" type="#_x0000_t75" alt="" style='width:480.75pt;height:347.25pt'
+ stroked="t" strokecolor="#f90" strokeweight="1.5pt">
+ <v:imagedata src="08.files/image005.png" o:title="" croptop="20517f"
+  cropbottom="6918f" cropleft="14993f" cropright="10923f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=647 height=469
+src="08.files/image006.jpg" v:shapes="_x0000_s1036"><![endif]></span></p>
+<p class="MsoEndnoteText">&nbsp;</p>
+<p class="a"><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400"><u>Задание:</u></span></font></p>
+<p class="MsoBodyTextIndent3"><font color="#FFFFFF">
+<span style="font-size: 14.0pt; layout-grid-mode: both">Проверить 
+предоставленные образы загрузочных секторов на предмет наличия или отсутствия в 
+них вирусов. Выделить все загрузочные сектора, содержащие, по вашему мнению, код 
+вируса. Определить тип операционной системы, использующей данную загрузочную 
+запись. Проверить загрузочную запись машины за которой вы работаете, на предмет 
+наличия в ней вирусов.</span><span style="font-size: 14.0pt"> </span></font></p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14pt">
+<applet code="fphover.class" codebase="../" width="120" height="24">
+  <param name="textcolor" value="#FFFFFF">
+  <param name="text" value="содержание">
+  <param name="bgcolor" value="#FF0000">
+  <param name="effect" value="lightGlow">
+  <param name="hovercolor" value="#FFFFFF">
+  <param name="color" value="#FF9900">
+  <param name="font" value="Dialog">
+  <param name="fontstyle" value="bold">
+  <param name="fontsize" value="14">
+  <param name="url" valuetype="ref" value="main.htm#8">
+</applet></span></font></p>
+
+<p class="MsoNormal" style="text-align: justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<h1 align="center" style="text-align: center; line-height: 150%">
+<font color="#FFFFFF" face="Arial" size="4"><a name="8__3"></a>Лабораторная 
+работа №3</font></h1>
+<p class="a" align="center" style="text-align: center; margin-left: 0">
+<font color="#FFFFFF" face="Arial"><span style="font-size: 14.0pt">Обнаружение 
+неизвестного вируса, использующего для заражения загрузочную запись</span></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Цель работы: </u></span></font></p>
+<p class="MsoNormal" style="margin-left:36.0pt;text-align:justify;text-indent:
+36.0pt"><font color="#FFFFFF"><span style="font-size: 14.0pt">Ознакомиться с еще 
+одним из вариантов обнаружения загрузочных вирусов, а также изучить новые 
+способы их обезвреживания.</span></font></p>
+<p class="a"><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400"><u>Необходимое аппаратное и программное 
+обеспечение:</u></span></font></p>
+<p class="MsoNormal" style="margin-left:35.45pt;text-align:justify;text-indent:
+35.45pt"><font color="#FFFFFF"><span style="font-size: 14.0pt">IBM-совместимые 
+компьютеры, не ниже Pentium, объединенные в сеть. Операционная система </span>
+<span lang="EN-US" style="font-size: 14.0pt">MS</span><span style="font-size: 14.0pt">-</span><span lang="EN-US" style="font-size: 14.0pt">DOS</span><span style="font-size: 14.0pt"> 
+или Windows. Загрузочные вирусы. Любой из языков программирования, наиболее 
+удобный с точки зрения студента для реализации поставленной задачи.</span></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Порядок выполнения работы</u></span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Как уже говорилось выше, в 
+разделе о загрузочных вирусах, основная опасность, исходящая от них заключается 
+в том, что они загружаются в память компьютера и запускаются на выполнение еще 
+до запуска операционной системы. Однако это их несомненное преимущество, 
+позволяющее скрываться от некоторых антивирусов, можно обернуть против самих 
+вирусов. </span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Дело в том, что в момент 
+передачи управления на главную загрузочную запись, все прерывания обрабатываться 
+только базовой системой ввода-вывода, а значит попадают во вполне определенный 
+диапазон адресов. Внедрившийся вирус для обеспечения своей работы обязательно 
+должен перехватывать некоторые из прерываний и устанавливать на них свои 
+обработчики, которые, как правило, лежат вне диапазона адресов используемых
+</span><span lang="EN-US" style="font-size: 14.0pt">BIOS</span><span style="font-size: 14.0pt">.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Чаще всего к таким 
+прерываниям относятся:</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 18.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt; font-family: Wingdings">&Oslash;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 14.0pt">8h и/или 1</span><span lang="EN-US" style="font-size: 14.0pt">Ch</span><span style="font-size: 14.0pt"> 
+обработчик прерывания от таймера, </span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 18.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt; font-family: Wingdings">&Oslash;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 14.0pt">9h обработчик прерываний от 
+клавиатуры,</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 18.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt; font-family: Wingdings">&Oslash;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 14.0pt">12h размер памяти,</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 18.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt; font-family: Wingdings">&Oslash;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 14.0pt">13h услуги диска,</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 18.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt; font-family: Wingdings">&Oslash;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 14.0pt">17h услуги принтера,</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 18.0pt">
+<font color="#FFFFFF">
+<span lang="EN-US" style="font-size: 14.0pt; font-family: Wingdings">&Oslash;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang="EN-US" style="font-size: 14.0pt">21h MS DOS.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Если в момент старта 
+главной загрузочной записи, какие-либо из перечисленных прерываний перехвачены, 
+то можно с уверенностью говорить о присутствии загрузочного вируса. Для проверки 
+месторасположения обработчиков прерываний необходимо немного изменить загрузчик.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">В код главной загрузочной 
+записи добавляются инструкции для просмотра элементов таблицы прерываний. В 
+случае обнаружения обработчика прерывания вне диапазона адресов, в которых могут 
+находиться внешние модули ROM и BIOS (сегменты C800h – F000h) на экран выводится 
+предупреждение. На данном этапе работы компьютера вирус в любом случае никак не 
+сможет повлиять на диагностику, т.к. ему мешают те же особенности работы 
+процессора, которые использует он сам.</span></font></p>
+<p class="a"><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400"><u>Задание:</u></span></font></p>
+<p class="MsoBodyTextIndent3"><font color="#FFFFFF">
+<span style="font-size: 14.0pt; layout-grid-mode: both">Написать программу, 
+которая бы добавляла в загрузочную запись код, проверяющий месторасположение 
+обработчиков прерываний, и в случае каких-либо отклонений, выводила на экран 
+предупреждение пользователю.</span></font></p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14pt">
+<applet code="fphover.class" codebase="../" width="120" height="24">
+  <param name="textcolor" value="#FFFFFF">
+  <param name="text" value="содержание">
+  <param name="bgcolor" value="#FF0000">
+  <param name="effect" value="lightGlow">
+  <param name="hovercolor" value="#FFFFFF">
+  <param name="color" value="#FF9900">
+  <param name="font" value="Dialog">
+  <param name="fontstyle" value="bold">
+  <param name="fontsize" value="14">
+  <param name="url" valuetype="ref" value="main.htm#8">
+</applet></span></font></p>
+
+<p class="MsoNormal" style="text-align: justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<h1 align="center" style="text-align: center; line-height: 150%">
+<font color="#FFFFFF" face="Arial" size="4"><a name="8__4"></a>Лабораторная 
+работа №4</font></h1>
+<h1 align="center" style="text-align: center">
+<font color="#FFFFFF" face="Arial"><span style="font-size: 14.0pt">Обнаружение и 
+удаление макровируса в зараженных файлах документов пакета Microsoft Office</span></font></h1>
+<p class="a"><u><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400">Цель работы:</span> </font></u></p>
+<p class="MsoNormal" style="margin-left:36.0pt;text-align:justify;text-indent:
+36.0pt"><font color="#FFFFFF"><span style="font-size: 14.0pt">Научиться 
+определять, наличие макровирусов в документах приложений пакета Microsoft Office. 
+Научиться обнаруживать и удалять обнаруженные макровирусы.</span></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Необходимое аппаратное и программное 
+обеспечение:</u></span></font></p>
+<p class="MsoNormal" style="margin-left:42.55pt;text-align:justify;text-indent:
+1.0cm"><font color="#FFFFFF"><span style="font-size: 14.0pt">IBM-совместимые 
+компьютеры, не ниже Pentium, объединенные в сеть. Операционная система Windows, 
+с установленным программным пакетом Microsoft Office (версии не ниже 7.0). 
+Инсталляционные файлы антивирусных пакетов (AVP, Doctor Web, Norton Anti</span><span lang="EN-US" style="font-size: 14.0pt">V</span><span style="font-size: 14.0pt">irus, 
+McAfee, Panda и т.д.). Коллекция инфицированных файлов.</span></font></p>
+<p class="a"><font color="#FFFFFF" size="3" face="Arial Black">
+<span style="font-weight: 400"><u>Порядок выполнения работы</u></span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Чтобы обезопасить рабочие 
+файлы от результатов экспериментов, настоятельно рекомендуется создать резервную 
+копию шаблона Normal.dot Так как именно этот файл чаще всего используется 
+макровирусами для их распространения.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Местоположение данного 
+файла может отличаться в зависимости от версии используемого пакета, но его 
+можно найти, используя стандартные средства поиска операционной системы. Теперь 
+можно приступать к эксперименту.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Прежде всего, необходимо 
+выяснить, инфицированы ли ваши документы и приложение Word пакета Microsoft 
+Office, каким либо макровирусом.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Проверьте установлена ли в 
+приложении защита от макровирусов («Сервис»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave;</span><span style="font-size: 14.0pt"> «Параметры»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave;</span><span style="font-size: 14.0pt">&nbsp; «Общие»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave; </span></font><span style="font-size: 14.0pt"><font color="#FFFFFF">«Защита 
+от вирусов в макросах»</font><a href="#_ftn1" name="_ftnref1" title><span class="MsoFootnoteReference"><![if !supportFootnotes]><span style="font-size: 14.0pt; font-family: Times New Roman"><font color="#FF9933">[1]</font></span><![endif]></span></a><font color="#FFFFFF"> 
+если галочка установлена, значит, она включена). Если она выключена, то включите 
+ее, откройте какой-либо документ, поработайте с ним и закройте приложение. Снова 
+запустите приложение Word, и проверьте установлена ли защита от макровирусов. 
+Если защита от макровирусов снята, значит, ваше приложение абсолютно точно 
+инфицировано вирусом. Если же она по прежнему включена, то это еще не о чем не 
+говорит и приложение надо проверить другим способом.</font></span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Для этого попробуйте 
+открыть в Word одновременно несколько документов, отредактировать в них 
+несколько строк и сохранить под другими именами в отдельном каталоге. Это 
+необходимо потому, что большинство макровирусов инфицируют незараженный документ 
+именно при его закрытии, хотя возможны и другие варианты. </span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Теперь перезапустите Word 
+и откройте сохраненные документы.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Содержимое самих 
+документов, скорее всего, останется без изменений, но это не означает, что вирус 
+их не инфицировал. Попробуйте запустить редактор VisualBasic из меню «Сервис»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave;</span><span style="font-size: 14.0pt"> «Макрос»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave; </span><span style="font-size: 14.0pt">«Редактор 
+VisualBasic». Здесь уже возможны несколько вариантов. Например, если вирус 
+присутствует в системе, то:</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 53.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>у вас, по указанному пути, вообще может не оказаться ссылки для запуска 
+VisualBasic</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 53.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>может появиться информационное окно с любым сообщением, которое выдает 
+какую-либо «служебную» информацию, но VisualBasic не загружает. В качестве 
+примера рис. 6</span></font></p>
+<p class="MsoNormal" style="margin-left:35.45pt;text-align:justify">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<font color="#FFFFFF"><span style="font-size: 14.0pt"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1032" type="#_x0000_t75" style='width:150pt;height:87pt'
+ fillcolor="window">
+ <v:imagedata src="08.files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=200 height=116
+src="08.files/image008.jpg" v:shapes="_x0000_s1032"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025" DrawAspect="Content" ObjectID="_1143715500">
+ </o:OLEObject>
+</xml><![endif]--></span></font></p>
+<p class="MsoNormal" style="margin-left:35.45pt;text-align:justify">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></p>
+<p class="MsoNormal" style="margin-left:0;text-align:center;"><font color="#FFFFFF"><span style="font-size: 14.0pt">
+Рис. 6</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoBodyTextIndent"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">Такое информационное сообщение может наблюдать 
+пользователь, выполнивший все вышеуказанные действия, если его компьютер заражен 
+вирусом «The Second».</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -18.0pt; margin-left: 53.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>пользователь увидит окно редактора VisualBasic (хотя большинство вирусов 
+не дают пользователю такой возможности, иногда это случается). Т.е. даже 
+добравшись до VisualBasic, пользователь не гарантирован от того, что в его 
+машине нет вируса.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Остановимся подробнее на 
+первых двух ситуациях, т.к. в этих случаях пользователь не может воспользоваться 
+редактором VisualBasic, для удаления вируса.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Отсюда ясно, первое что 
+должен сделать пользователь – загрузить VisualBasic. Как это сделать?</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Во первых можно 
+попробовать загрузить редактор VisualBasic используя, так называемые быстрые 
+клавиши (сочетание клавиш «Alt»+«F11»). Многие вирусы не предусматривают 
+подобной блокировки и часто удается загрузить редактор даже в том случае, когда 
+ссылка на него отсутствует в главном меню Word.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Если первый вариант не 
+проходит, то единственное, что остается – это удалить файл шаблона Normal.dot, 
+который чаще всего инфицируется вирусом, а также все файлы, расположенные в 
+папке “C:\Program Files\Microsoft Office\Office\Startup”, т.к. файлы, 
+содержащиеся в этой папке, выполняются автоматически при запуске приложений 
+пакета Microsoft Office. Таким образом, пользователь избавляется от запуска 
+вируса в момент загрузки приложения Microsoft Word, но также вместе с этим он 
+теряет все настройки той среды приложения, в которой он работал.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Далее необходимо запустить 
+приложение Word (не открывая никаких имеющихся документов для редактирования) и 
+в меню «Сервис»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave;</span><span style="font-size: 14.0pt"> «Параметры»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave;</span><span style="font-size: 14.0pt">&nbsp; «Общие» 
+установить галочку на пункте «Защита от вирусов в макросах». После чего закрыть 
+приложение Word. При закрытии приложения автоматически создается новый файл 
+шаблона Normal.dot но теперь он уже не содержит макровирусов и в нем по 
+умолчанию включена защита от них.</span></font></p>
+<p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<font color="#FFFFFF"><span style="font-size: 14.0pt"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1033" type="#_x0000_t75" style='width:333.75pt;height:145.5pt'
+ fillcolor="window">
+ <v:imagedata src="08.files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=445 height=194
+src="08.files/image010.jpg" v:shapes="_x0000_s1033"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1026" DrawAspect="Content" ObjectID="_1143715501">
+ </o:OLEObject>
+</xml><![endif]--></span></font></p>
+<p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Рис. 7</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoBodyTextIndent"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">Теперь если приложение Microsoft Word не 
+инфицировано и в нем включена защита от макровирусов, то при загрузке документа, 
+содержащего макросы, пользователю будет выводиться&nbsp; окно, которое изображено на 
+рис.7 </span></font></p>
+<p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoBodyTextIndent"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">Итак, результатом всей предыдущей деятельности 
+должна стать возможность запуска редактора VisualBasic, т.к. только при его 
+использовании с большой долей уверенности можно сказать, что в приложении нет 
+вирусов.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Здесь необходимо нажать 
+кнопку «Отключить макросы». В этом случае загруженные с документом макросы не 
+будут запускаться приложением Microsoft Word, но пользователь сможет посмотреть 
+сами макросы в редакторе VisualBasic.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">После того как документ, 
+содержащий макросы будет открыт, необходимо перейти в окно редактора VisualBasic 
+(«Сервис»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave;</span><span style="font-size: 14.0pt">&nbsp; «Макрос»</span><span style="font-size: 14.0pt; font-family: Wingdings">&agrave;</span><span style="font-size: 14.0pt"> «Редактор 
+VisualBasic» или сочетание клавиш «Alt»+«F11»). Оно показано на рис. 8</span></font></p>
+<p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<font color="#FFFFFF"><span style="font-size: 14.0pt"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1034" type="#_x0000_t75" style='width:381pt;height:285pt'
+ fillcolor="window">
+ <v:imagedata src="08.files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=508 height=380
+src="08.files/image012.gif" v:shapes="_x0000_s1034"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1027" DrawAspect="Content" ObjectID="_1143715502">
+ </o:OLEObject>
+</xml><![endif]--></span></font></p>
+<p class="MsoNormal" style="text-align:justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Рис. 8</span></font></p>
+<p class="MsoBodyText2"><font color="#FFFFFF"><span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Далее пользователь может 
+удалить макросы, содержащиеся в документе, открыв вкладку «модули» в текущем 
+проекте (на картинке она обведена зеленым кружком), выбрав соответствующий 
+модуль и нажав на нем правую кнопку мыши выбрать «Удалить …» на контекстном 
+меню.</span></font></p>
+<p class="MsoBodyTextIndent3"><font color="#FFFFFF">
+<span style="font-size: 14.0pt; layout-grid-mode: both">После того как ненужные 
+макросы, т.е. макросы неизвестные пользователю или макросы которыми он не 
+пользуется (предполагается, что это макровирусы) будут удалены, необходимо 
+закрыть редактор VisualBasic и сохранить документ.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">После этого документ не 
+будет содержать макровирусов, если пользователь, по небрежности вновь его не 
+инфицирует.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><span style="font-size: 14.0pt">Данную операцию необходимо 
+повторить со всеми документами, содержащими неизвестные макросы.</span></font></p>
+<p class="a"><font color="#FFFFFF" face="Arial Black" size="3">
+<span style="font-weight: 400"><u>Задание:</u></span></font></p>
+<p class="MsoBodyTextIndent3"><font color="#FFFFFF">
+<span style="font-size: 14.0pt; layout-grid-mode: both">Обнаружить, файл 
+документа (содержащего вирус), находящийся в папке с другими неинфицированными 
+документами и удалить из него все макросы.</span></font></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:36.0pt">
+<font color="#FFFFFF"><i><span style="font-size: 14.0pt">Примечание:</span></i><span style="font-size: 14.0pt"> 
+набор файлов, выдается преподавателем</span></font></p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: right; text-indent: 35.45pt">
+<font color="#FFFFFF"><span style="font-size: 14pt">
+<applet code="fphover.class" codebase="../" width="120" height="24">
+  <param name="textcolor" value="#FFFFFF">
+  <param name="text" value="содержание">
+  <param name="bgcolor" value="#FF0000">
+  <param name="effect" value="lightGlow">
+  <param name="hovercolor" value="#FFFFFF">
+  <param name="color" value="#FF9900">
+  <param name="font" value="Dialog">
+  <param name="fontstyle" value="bold">
+  <param name="fontsize" value="14">
+  <param name="url" valuetype="ref" value="main.htm#8">
+</applet></span></font></p>
+
+<p class="MsoNormal" style="text-align: justify"><font color="#FFFFFF">
+<span style="font-size: 14.0pt">&nbsp;</span></font></p>
+<div style="mso-element:footnote-list">
+&nbsp;<![if !supportFootnotes]><hr align="left" size="1" width="33%"><![endif]>
+  <div style="mso-element:footnote" id="ftn1">
+    <p class="MsoFootnoteText"><a href="#_ftnref1" name="_ftn1" title>
+    <span class="MsoFootnoteReference"><span style="font-size: 14.0pt"><![if !supportFootnotes]>
+    <span style="font-size: 14.0pt; font-family: Times New Roman">
+    <font color="#FF9933">[1]</font></span><![endif]></span></span></a><font color="#FFFFFF"><span style="font-size: 14.0pt"> 
+    Здесь и далее предполагается, что пользователь работает с русскоязычной 
+    версией пакета </span><span lang="EN-US" style="font-size: 14.0pt">Microsoft 
+    Word</span><span style="font-size: 14.0pt"> 97. Для других версий указанные 
+    пути могут называться по другому, но в любом случае они существуют.</span></font></div>
+</div>
+
+</body>
+
+</html>

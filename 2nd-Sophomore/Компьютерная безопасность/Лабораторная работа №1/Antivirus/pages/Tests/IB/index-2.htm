@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="KEYWORDS" content="Тесты">
+<meta name="DESCRIPTION" content="Тест по теме - Основы информационной безопасности">
+<title>Тест - ИБ</title>
+<script language="JavaScript">
+<!--
+function check(form)  
+{
+    if (form.n.value == '') alert('Введите ваше имя');
+	else if (form.f.value == '') alert('Введите вашу фамилию');
+		else if (form.d.value == '') alert('Введите название отдела');
+			else
+			{
+			alert('Успехов вам '+form.n.value+'!') ;myshow(1);
+			}
+}
+function setfocus(el) {
+document.WapForm.el.focus();
+}
+
+-->
+</script>
+<script language=javascript src="internet_.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="document.WapForm.reset()">
+
+
+<p><big><big><font face="Verdana,Arial"><strong><center>Информационная Безопасность</center></strong></font></big></big></p>
+<center>(126 вопросов)</center><br>
+<form name="WapForm">
+    <div id="wq_user">
+    <p><small><font face="Verdana,Arial">Введите следующие данные:<br>
+(поля, обязательные для заполнения, обозначены значком *)
+</font></small></p>
+    <p>
+      
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr> 
+        <td width="200"><small><font face="Verdana,Arial">*Имя:</font></small></td>
+        <td><small><font face="Verdana,Arial"> 
+          <input type="text" name="Quiz.UserData.Имя" id="n" size=25>
+          </font></small></td>
+      </tr>
+      <tr> 
+        <td width="200"><small><font face="Verdana,Arial">*Фамилия:</font></small></td>
+        <td><small><font face="Verdana,Arial"> 
+          <input type="text" name="Quiz.UserData.Фамилия" id="f" size=25>
+          </font></small></td>
+      </tr>
+      <tr> 
+        <td><small><font face="Verdana,Arial">*Предприятие, отдел:</font></small></td>
+        <td><small><font face="Verdana,Arial">  
+		  <input type="text" name="Quiz.UserData.Отдел" id="d" size=50></font></small>
+		</td>
+      </tr>
+      <tr>
+        <td><small><font face="Verdana,Arial">&nbsp; E-mail:</font></small></td>
+        <td><small><font face="Verdana,Arial">  
+		  <input type="text" name="Quiz.UserData.Почта" id="e" size=50></font></small>
+		</td>
+      </tr>
+      <tr> 
+        <td width="100"><small><font face="Verdana,Arial">&nbsp;</font></small></td>
+        <td><small><font face="Verdana,Arial">&nbsp;</font></small></td>
+      </tr>
+      <tr> 
+        <td width="100"><small><font face="Verdana,Arial">&nbsp;</font></small></td>
+        <td><small><font face="Verdana,Arial"> 
+          <input type="button" value="Начать тестирование" name="StartQuiz" onClick="javascript:check(this.form)">
+          </font></small></td>
+      </tr>
+    </table>
+    </p>
+	
+	
+    </div>
+	
+
+    <script language=javascript><!--
+{
+doTest();
+}//--></script>
+
+    <div id="wq_final" style="display:none">
+      <p><small><font face="Verdana,Arial">Нажмите "результат" для оценки</font></small></p>
+    </div>
+    <div id="wq_final2" style="display:none">
+        <input type="button" value="Результат" name="ButtonSubmit"  onClick="correct(document.WapForm)">
+    </div>
+</form>
+<div id="Layer1" style="position:absolute; left:0; top:0; width:75px; height:53px; z-index:1; visibility: hidden;"> 
+<!-- Begin Nedstat Basic code -->
+<!-- Title: test - internet -->
+
+</script>
+<noscript>
+border="0" nosave width="18" height="18"
+alt="Nedstat Basic - Free web site statistics"></a>
+</noscript>
+<!-- End Nedstat Basic code -->
+
+
+
+</div>
+	
+</body>
+</html>
