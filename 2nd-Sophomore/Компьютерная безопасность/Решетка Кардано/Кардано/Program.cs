@@ -4,13 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Лабораторная_работа__5
+namespace Кардано
 {
     static class Program
     {
-        /// <summary>
+        /// <summkeyy>
         /// The main entry point for the application.
-        /// </summary>
+        /// </summkeyy>
         [STAThread]
         static void Main()
         {
