@@ -22,6 +22,9 @@ namespace Playfair
             'v', 'w', 'x', 'y', 'z'
         };
 
+        private string _input;
+        private string _output;
+
         public Form1()
         {
             InitializeComponent();
@@ -86,5 +89,7 @@ namespace Playfair
                     ++k;
                 }
         }
+
+
     }
 }
