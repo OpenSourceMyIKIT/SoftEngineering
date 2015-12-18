@@ -1,0 +1,27 @@
+﻿<Page x:Class="View.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:View"
+      mc:Ignorable="d" 
+      d:DesignHeight="480" d:DesignWidth="854"
+      Title="Study Progress"
+      ShowsNavigationUI ="False">
+
+    <Grid Background="#F2FFFA">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+                    Width="200">
+            <TextBox x:Name="TbLogin" VerticalAlignment="Top" 
+                     HorizontalAlignment="Center" Width="100" Margin="5" />
+            <TextBox x:Name="TbPassword" VerticalAlignment="Top" 
+                     HorizontalAlignment="Center" Width="100" Margin="5" />
+            <Button x:Name="BtnRegister" VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" Content="Регистрация"
+                    Click="BtnRegister_Click" Margin="5" />
+            <Button x:Name="BtnLogIn" VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" Content="Вход"
+                    Click="BtnLogIn_Click" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Page>

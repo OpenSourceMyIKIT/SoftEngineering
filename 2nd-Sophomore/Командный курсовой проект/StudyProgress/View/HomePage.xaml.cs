@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using ViewModel;
 
 namespace View
 {
@@ -8,6 +9,8 @@ namespace View
     /// </summary>
     public partial class HomePage : Page
     {
+        private readonly MainWindowViewModel _dc = MainWindowViewModel.Instance;
+
         public HomePage()
         {
             InitializeComponent();
@@ -15,9 +18,9 @@ namespace View
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            var mainPage = new MainPage();
-            var navigationService = this.NavigationService;
-            navigationService?.Navigate(mainPage);
+            var loginPage = new LoginPage();
+            var navigationService = NavigationService;
+            navigationService?.Navigate(loginPage);
         }
     }
 }
