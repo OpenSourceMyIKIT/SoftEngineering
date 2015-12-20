@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SharedModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SharedModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Subject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HasExam" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HasMidterm" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Summary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tasks" nillable="true" type="tns:ArrayOfTask" />
+      <xs:element minOccurs="0" name="Teacher" nillable="true" type="tns:Teacher" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Subject" nillable="true" type="tns:Subject" />
+  <xs:complexType name="ArrayOfTask">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Task" nillable="true" type="tns:Task" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTask" nillable="true" type="tns:ArrayOfTask" />
+  <xs:complexType name="Task">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Due" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Given" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Task" nillable="true" type="tns:Task" />
+  <xs:complexType name="Teacher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Teacher" nillable="true" type="tns:Teacher" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subjects" nillable="true" type="tns:ArrayOfSubject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ArrayOfSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subject" nillable="true" type="tns:Subject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubject" nillable="true" type="tns:ArrayOfSubject" />
+</xs:schema>

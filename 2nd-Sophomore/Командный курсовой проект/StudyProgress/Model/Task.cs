@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
-namespace Model
+namespace SharedModel
 {
+    [DataContract]
     public class Task
     {
         public Task(string name, string taskText, DateTime given, DateTime due)
@@ -12,9 +14,13 @@ namespace Model
             Due = due;
         }
 
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public string TaskText { get; set; }
+        [DataMember]
         public DateTime Given { get; set; }
+        [DataMember]
         public DateTime Due { get; set; }
     }
 }

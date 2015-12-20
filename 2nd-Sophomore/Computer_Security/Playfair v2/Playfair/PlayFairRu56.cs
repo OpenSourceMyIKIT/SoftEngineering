@@ -8,16 +8,17 @@
             Replaces.Add('ё', 'е');
             Replaces.Add('й', 'и');
             Replaces.Add('ъ', 'ь');
+            Replaces.Add('щ', 'ш');
         }
 
         protected override char[] AlphabetChars
         {
-            get { return "абвгдежзиклмнопрстуфхцчшщьыэюя".ToCharArray(); }
+            get { return "абвгдежзиклмнопрстуфхцчшьыэюя_".ToCharArray(); }
         }
 
         public override char Replacer
         {
-            get { return 'х'; }
+            get { return '_'; }
         }
 
         public override int Columns

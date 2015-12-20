@@ -74,11 +74,11 @@ namespace Playfair
         ///     Разбиение текста на символы по биграммам.
         ///     Replacer выкидывается
         /// </summary>
-        private IEnumerable<char> Bigrams(string Text)
+        private IEnumerable<char> Bigrams(string text)
         {
             var prev = '\0'; // Храним первый символ биграммы
             var even = false; // если второй символ биграммы
-            foreach (var c in Text)
+            foreach (var c in text)
             {
                 // Преобразуем символ из текста
                 // он может стать Replacer'ом, если, например, это пробел
@@ -147,7 +147,7 @@ namespace Playfair
                 var p2 = Positions[chars.Current];
 
                 // Если они на одной строке - переводим вправо
-                // Если в одной колнке - вниз
+                // Если в одной колонке - вниз
                 var error = 0;
                 if (p1.Column == p2.Column)
                 {
