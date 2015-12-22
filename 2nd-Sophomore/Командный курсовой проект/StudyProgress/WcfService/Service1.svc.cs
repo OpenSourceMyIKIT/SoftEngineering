@@ -63,7 +63,7 @@ namespace WcfService
         {
             var result = _users.Any(t => login == t.Login && password == t.Password);
 
-            _activeUser = _users.Find(x => x.Login.Contains(login));
+            _activeUser = _users.Find(x => x.Login == login);
 
             return result;
         }
@@ -76,7 +76,7 @@ namespace WcfService
             }
             _users.Add(new User() {Login = login, Password = password});
 
-            _activeUser = _users.Find(x => x.Login.Contains(login));
+            _activeUser = _users.Find(x => x.Login == login);
 
             return true;
         }

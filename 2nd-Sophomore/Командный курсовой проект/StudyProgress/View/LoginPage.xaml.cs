@@ -19,6 +19,8 @@ namespace View
 
         private void BtnLogIn_Click(object sender, RoutedEventArgs e)
         {
+            if (TbLogin.Text == "" || TbPassword.Text == "")
+                MessageBox.Show("Логин/пароль не могут быть пустыми");
             if (_dc.Client.Login(TbLogin.Text, TbPassword.Text))
             {
                 var mainPage = new MainPage();
@@ -30,6 +32,8 @@ namespace View
 
         private void BtnRegister_Click(object sender, RoutedEventArgs e)
         {
+            if (TbLogin.Text == "" || TbPassword.Text == "")
+                MessageBox.Show("Логин/пароль не могут быть пустыми");
             if (_dc.Client.Register(TbLogin.Text, TbPassword.Text))
             {
                 var mainPage = new MainPage();
