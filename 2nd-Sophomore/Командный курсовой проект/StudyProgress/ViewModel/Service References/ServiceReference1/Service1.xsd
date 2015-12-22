@@ -2,17 +2,15 @@
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:59862/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SharedModel" />
   <xs:import schemaLocation="http://localhost:59862/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfService" />
-  <xs:element name="GetData">
+  <xs:element name="ReturnActiveUser">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="value" type="xs:int" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetDataResponse">
+  <xs:element name="ReturnActiveUserResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SharedModel" minOccurs="0" name="ReturnActiveUserResult" nillable="true" type="q1:User" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -24,7 +22,7 @@
   <xs:element name="GetSubjectResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SharedModel" minOccurs="0" name="GetSubjectResult" nillable="true" type="q1:Subject" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SharedModel" minOccurs="0" name="GetSubjectResult" nillable="true" type="q2:Subject" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -58,8 +56,8 @@
   <xs:element name="AddSubject">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SharedModel" minOccurs="0" name="user" nillable="true" type="q2:User" />
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SharedModel" minOccurs="0" name="subject" nillable="true" type="q3:Subject" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SharedModel" minOccurs="0" name="user" nillable="true" type="q3:User" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SharedModel" minOccurs="0" name="subject" nillable="true" type="q4:Subject" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -86,14 +84,14 @@
   <xs:element name="GetDataUsingDataContract">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="composite" nillable="true" type="q4:CompositeType" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="composite" nillable="true" type="q5:CompositeType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetDataUsingDataContractResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q5:CompositeType" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q6:CompositeType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

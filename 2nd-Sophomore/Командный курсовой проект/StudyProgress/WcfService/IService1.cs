@@ -10,7 +10,7 @@ namespace WcfService
     public interface IService1
     {
         [OperationContract]
-        string GetData(int value);
+        User ReturnActiveUser();
 
         [OperationContract]
         Subject GetSubject();

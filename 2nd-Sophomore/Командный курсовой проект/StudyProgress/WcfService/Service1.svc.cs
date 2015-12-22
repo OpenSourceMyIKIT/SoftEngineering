@@ -11,21 +11,37 @@ namespace WcfService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        private List<User> users = new List<User>()
+        private List<User> _users = new List<User>()
         {
             new User()
             {
                 Login = "User",
-                Password = "0000"
+                Password = "0000",
+                Subjects = new ObservableCollection<Subject>
+                {
+                    new Subject
+                    {
+                        Name = "Матлогика",
+                        Progress = 78,
+                        Summary = "Математическая логика и теория алгоритмов"
+                    },
+                    new Subject
+                    {
+                        Name = "ООП",
+                        Progress = 100,
+                        Summary = "Объектно-ориентированное программирование"
+                    }
+                }
             }
         };
 
         private Subject oop = new Subject {Name = "ООП", HasExam = false};
-        
 
-        public string GetData(int value)
+        private static User _activeUser;
+
+        public User ReturnActiveUser()
         {
-            return $"You entered: {value}";
+            return _activeUser;
         }
 
         public Subject GetSubject()
@@ -45,16 +61,23 @@ namespace WcfService
 
         public bool Login(string login, string password)
         {
-            return users.Any(t => login == t.Login && password == t.Password);
+            var result = _users.Any(t => login == t.Login && password == t.Password);
+
+            _activeUser = _users.Find(x => x.Login.Contains(login));
+
+            return result;
         }
 
         public bool Register(string login, string password)
         {
-            if (users.Any(t => t.Login == login))
+            if (_users.Any(t => t.Login == login))
             {
                 return false;
             }
-            users.Add(new User() {Login = login, Password = password});
+            _users.Add(new User() {Login = login, Password = password});
+
+            _activeUser = _users.Find(x => x.Login.Contains(login));
+
             return true;
         }
 

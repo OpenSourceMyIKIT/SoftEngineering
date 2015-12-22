@@ -8,11 +8,11 @@
       <xsd:import schemaLocation="http://localhost:59862/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfService" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_GetData_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetData" />
+  <wsdl:message name="IService1_ReturnActiveUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnActiveUser" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetData_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  <wsdl:message name="IService1_ReturnActiveUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnActiveUserResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetSubject_InputMessage">
     <wsdl:part name="parameters" element="tns:GetSubject" />
@@ -51,9 +51,9 @@
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
-    <wsdl:operation name="GetData">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    <wsdl:operation name="ReturnActiveUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReturnActiveUser" message="tns:IService1_ReturnActiveUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReturnActiveUserResponse" message="tns:IService1_ReturnActiveUser_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetSubject">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSubject" message="tns:IService1_GetSubject_InputMessage" />
@@ -82,8 +82,8 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="GetData">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+    <wsdl:operation name="ReturnActiveUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReturnActiveUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

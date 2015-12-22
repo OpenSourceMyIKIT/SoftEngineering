@@ -29,5 +29,7 @@ namespace SharedModel
         public bool HasExam { get; set; }
         [DataMember]
         public bool HasMidterm { get; set; }
+        [DataMember]
+        public int Progress { get; set; }
     }
 }

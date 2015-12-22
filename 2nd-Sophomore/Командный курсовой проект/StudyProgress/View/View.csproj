@@ -143,6 +143,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\SharedModel.Subject.datasource" />
+    <None Include="Properties\DataSources\SharedModel.User.datasource" />
     <None Include="Properties\DataSources\ViewModel.ServiceReference1.CompositeType.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

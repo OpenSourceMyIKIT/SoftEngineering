@@ -66,6 +66,7 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\SharedModel.Subject.datasource" />
+    <None Include="Properties\DataSources\SharedModel.User.datasource" />
     <None Include="Service References\ServiceReference1\Service1.wsdl" />
     <None Include="Service References\ServiceReference1\Service1.xsd">
       <SubType>Designer</SubType>

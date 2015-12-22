@@ -22,6 +22,9 @@
             <Button x:Name="BtnLogIn" VerticalAlignment="Center" 
                     HorizontalAlignment="Center" Content="Вход"
                     Click="BtnLogIn_Click" Margin="5" />
+            <Button x:Name="BtnExit" VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" Content="Выход"
+                    Click="BtnExit_Click" Margin="25" />
         </StackPanel>
     </Grid>
 </Page>

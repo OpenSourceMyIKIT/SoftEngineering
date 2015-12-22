@@ -8,7 +8,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="480" d:DesignWidth="854"
       Title="Study Progress"
-      ShowsNavigationUI ="False">
+      ShowsNavigationUI ="False" Loaded="MainPage_OnLoaded" >
 
     <Page.Resources>
         <ControlTemplate x:Key="RoundBorderButton" TargetType="{x:Type Button}">
@@ -37,37 +37,11 @@
                            Margin="10 10" FontSize="16">
                     <Run Text="Дисциплина" />
                 </TextBlock>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
+                <ScrollViewer>
+                    <StackPanel x:Name="SubjectsPanel">
 
-                    <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"
-                               VerticalAlignment="Center" Margin="10 10" FontSize="16">
-                        <Run Text="Мат. логика" />
-                    </TextBlock>
-                    <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"
-                               VerticalAlignment="Center" Margin="10 10" FontSize="16">
-                        <Run Text="Экономика" />
-                    </TextBlock>
-                    <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center"
-                               VerticalAlignment="Center" Margin="10 10" FontSize="16">
-                        <Run Text="ККП" />
-                    </TextBlock>
-
-                    <ProgressBar Grid.Column="1" Grid.Row="0" Margin="10 10"
-                                 HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <ProgressBar Grid.Column="1" Grid.Row="1" Margin="10 10"
-                                 HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <ProgressBar Grid.Column="1" Grid.Row="2" Margin="10 10"
-                                 HorizontalAlignment="Center" VerticalAlignment="Center" />
-                </Grid>
+                    </StackPanel>
+                </ScrollViewer>
             </StackPanel>
         </Border>
 
@@ -89,7 +63,14 @@
             <StackPanel>
                 <Button Template="{StaticResource RoundBorderButton}" 
                         HorizontalAlignment="Center" VerticalAlignment="Top" 
-                        Content=" + " Margin="10 10" Click="ButtonAdd_Click" />
+                        Content=" + " Margin="10 10" Click="ButtonAdd_Click" 
+                        FontFamily="Bold" FontSize="12" />
+                <Button HorizontalAlignment="Center" VerticalAlignment="Top" 
+                        Content="Выйти на экран логина" Margin="10 50 10 10" 
+                        Click="ButtonReturnToLogin_Click" FontSize="12" />
+                <Button HorizontalAlignment="Center" VerticalAlignment="Top" 
+                        Content="Закрыть приложение" Margin="10 10" 
+                        Click="BtnExit_Click" FontSize="12" />
             </StackPanel>
         </Border>
 

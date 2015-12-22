@@ -38,5 +38,11 @@ namespace View
             }
             else MessageBox.Show("Логин уже занят!");
         }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            _dc.Close();
+            Application.Current.Shutdown();
+        }
     }
 }

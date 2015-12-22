@@ -1,4 +1,5 @@
-﻿using ViewModel.ServiceReference1;
+﻿using SharedModel;
+using ViewModel.ServiceReference1;
 
 namespace ViewModel
 {
