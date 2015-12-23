@@ -34,9 +34,7 @@ namespace WcfService
                 }
             }
         };
-
-        private Subject oop = new Subject {Name = "ООП", HasExam = false};
-
+        
         private static User _activeUser;
 
         public User ReturnActiveUser()
@@ -46,12 +44,13 @@ namespace WcfService
 
         public Subject GetSubject()
         {
-            return oop;
+            //TODO GetSubject
+            return null;
         }
 
         public void SetExam(bool b)
         {
-            oop.HasExam = b;
+            //TODO SetExam
         }
 
         public void AddSubject(User user, Subject subject)
@@ -61,22 +60,25 @@ namespace WcfService
 
         public bool Login(string login, string password)
         {
-            var result = _users.Any(t => login == t.Login && password == t.Password);
+            var result = _users?.Any(t => login == t.Login && password == t.Password);
 
-            _activeUser = _users.Find(x => x.Login == login);
+            _activeUser = _users?.Find(x => x.Login == login);
 
-            return result;
+            return (bool)result;
         }
 
         public bool Register(string login, string password)
         {
-            if (_users.Any(t => t.Login == login))
+            if (_users != null)
             {
-                return false;
+                if (_users.Any(t => t.Login == login))
+                {
+                    return false;
+                }
             }
-            _users.Add(new User() {Login = login, Password = password});
+            _users?.Add(new User() {Login = login, Password = password});
 
-            _activeUser = _users.Find(x => x.Login == login);
+            _activeUser = _users?.Find(x => x.Login == login);
 
             return true;
         }

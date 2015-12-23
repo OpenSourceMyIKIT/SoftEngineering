@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using SharedModel;
 using ViewModel;
 
 namespace View
@@ -20,7 +19,9 @@ namespace View
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
-            InfoTextBlock.Text = _dc.ReturnName();
+            var addSubject = new AddSubject();
+            var navigationService = NavigationService;
+            navigationService?.Navigate(addSubject);
         }
 
         private void ButtonReturnToLogin_Click(object sender, RoutedEventArgs e)
@@ -58,7 +59,8 @@ namespace View
                     Maximum = 100,
                     Value = t.Progress,
                     Width = 100,
-                    Height = 10
+                    Height = 10,
+                    ToolTip = new ToolTip { Content = t.Progress + "%"}
                 });
             }
         }
