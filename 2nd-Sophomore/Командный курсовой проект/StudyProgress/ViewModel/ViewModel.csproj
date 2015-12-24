@@ -85,6 +85,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EntityDAL\EntityDAL.csproj">
+      <Project>{2732057d-8b73-4086-92be-b99a3977a0c6}</Project>
+      <Name>EntityDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\SharedModel.csproj">
       <Project>{75b67f62-e98b-40d9-bc0f-4d2904517cf0}</Project>
       <Name>SharedModel</Name>

@@ -1,10 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace SharedModel
 {
     [DataContract]
-    public class Subject
+    public class Subject : IDomainObject
     {
         //public Subject()
         //{
@@ -18,7 +18,7 @@ namespace SharedModel
         //    HasMidterm = hasMidterm;
         //}
         [DataMember]
-        public ObservableCollection<Task> Tasks { get; set; }
+        public List<Task> Tasks { get; set; }
         [DataMember]
         public string Name { get; set; }
         [DataMember]
@@ -30,6 +30,10 @@ namespace SharedModel
         [DataMember]
         public bool HasMidterm { get; set; }
         [DataMember]
-        public int Progress { get; set; }
+        public int ComplitionProgress { get; set; }
+        [DataMember]
+        public int Id { get; set; }
+        [DataMember]
+        public virtual User User { get; set; }
     }
 }

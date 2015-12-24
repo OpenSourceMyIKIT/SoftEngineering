@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:View"
       mc:Ignorable="d" 
       d:DesignHeight="480" d:DesignWidth="854"
-      Title="Study Progress"
+      Title="Study ComplitionProgress"
       ShowsNavigationUI ="False">
 
     <Grid Background="#F2FFFA">

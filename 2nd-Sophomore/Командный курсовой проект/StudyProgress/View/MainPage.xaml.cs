@@ -1,5 +1,8 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
+using SharedModel;
 using ViewModel;
 
 namespace View
@@ -14,7 +17,7 @@ namespace View
         public MainPage()
         {
             InitializeComponent();
-            DataContext = _dc;
+            DataContext = _dc.ReturnActiveUser().Subjects.ToList();
         }
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
@@ -33,13 +36,12 @@ namespace View
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
-            _dc.Close();
             Application.Current.Shutdown();
         }
 
         private void MainPage_OnLoaded(object sender, RoutedEventArgs e)
         {
-            foreach (var t in _dc.Client.ReturnActiveUser().Subjects)
+            foreach (var t in _dc.ReturnActiveUser().Subjects)
             {
                 SubjectsPanel.Children.Add(new TextBlock
                 {
@@ -57,10 +59,10 @@ namespace View
                     Margin = new Thickness(10, 10, 10, 10),
                     Minimum = 0,
                     Maximum = 100,
-                    Value = t.Progress,
+                    Value = t.ComplitionProgress,
                     Width = 100,
                     Height = 10,
-                    ToolTip = new ToolTip { Content = t.Progress + "%"}
+                    ToolTip = new ToolTip { Content = t.ComplitionProgress + "%" }
                 });
             }
         }

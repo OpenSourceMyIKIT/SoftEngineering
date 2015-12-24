@@ -14,14 +14,13 @@ namespace View
         public LoginPage()
         {
             InitializeComponent();
-            DataContext = _dc;
         }
 
         private void BtnLogIn_Click(object sender, RoutedEventArgs e)
         {
             if (TbLogin.Text == "" || TbPassword.Text == "")
-                MessageBox.Show("Логин/пароль не могут быть пустыми");
-            if (_dc.Client.Login(TbLogin.Text, TbPassword.Text))
+                MessageBox.Show(Resource.BlankLoginPassword);
+            if (_dc.Login(TbLogin.Text, TbPassword.Text))
             {
                 var mainPage = new MainPage();
                 var navigationService = NavigationService;
@@ -33,8 +32,8 @@ namespace View
         private void BtnRegister_Click(object sender, RoutedEventArgs e)
         {
             if (TbLogin.Text == "" || TbPassword.Text == "")
-                MessageBox.Show("Логин/пароль не могут быть пустыми");
-            if (_dc.Client.Register(TbLogin.Text, TbPassword.Text))
+                MessageBox.Show(Resource.BlankLoginPassword);
+            if (_dc.Register(TbLogin.Text, TbPassword.Text))
             {
                 var mainPage = new MainPage();
                 var navigationService = NavigationService;
@@ -45,7 +44,6 @@ namespace View
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
-            _dc.Close();
             Application.Current.Shutdown();
         }
     }

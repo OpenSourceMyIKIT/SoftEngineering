@@ -4,16 +4,8 @@ using System.Runtime.Serialization;
 namespace SharedModel
 {
     [DataContract]
-    public class Task
+    public class Task : IDomainObject
     {
-        public Task(string name, string taskText, DateTime given, DateTime due)
-        {
-            Name = name;
-            TaskText = taskText;
-            Given = given;
-            Due = due;
-        }
-
         [DataMember]
         public string Name { get; set; }
         [DataMember]
@@ -22,5 +14,7 @@ namespace SharedModel
         public DateTime Given { get; set; }
         [DataMember]
         public DateTime Due { get; set; }
+        [DataMember]
+        public int Id { get; set; }
     }
 }

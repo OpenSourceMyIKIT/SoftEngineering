@@ -15,18 +15,19 @@ namespace View
         public AddSubject()
         {
             InitializeComponent();
-            DataContext = _dc;
         }
 
         private void BtnAddSubject_Click(object sender, RoutedEventArgs e)
         {
-            //_dc.Client.AddSubject(_dc.Client.ReturnActiveUser(), new Subject
-            //{
-            //    Name = TbName.Text,
-            //    HasExam = (bool)CheckExam.IsChecked,
-            //    HasMidterm = (bool)CheckMidterm.IsChecked,
-            //    Summary = TbSummary.Text
-            //});
+            _dc.AddSubject(_dc.ReturnActiveUser(), new Subject
+            {
+                Name = TbName.Text,
+                HasExam = (bool)CheckExam.IsChecked,
+                HasMidterm = (bool)CheckMidterm.IsChecked,
+                Summary = TbSummary.Text
+            });
+
+            _dc.Entity.SaveChanges();
             var mainPage = new MainPage();
             var navigationService = NavigationService;
             navigationService?.Navigate(mainPage);

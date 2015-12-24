@@ -17,18 +17,18 @@ namespace WcfService
             {
                 Login = "User",
                 Password = "0000",
-                Subjects = new ObservableCollection<Subject>
+                Subjects = new List<Subject>
                 {
                     new Subject
                     {
                         Name = "Матлогика",
-                        Progress = 78,
+                        ComplitionProgress = 78,
                         Summary = "Математическая логика и теория алгоритмов"
                     },
                     new Subject
                     {
                         Name = "ООП",
-                        Progress = 100,
+                        ComplitionProgress = 100,
                         Summary = "Объектно-ориентированное программирование"
                     }
                 }

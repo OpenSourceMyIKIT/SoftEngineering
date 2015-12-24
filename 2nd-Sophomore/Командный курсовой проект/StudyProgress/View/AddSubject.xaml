@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:View"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="Study Progress" ShowsNavigationUI ="False">
+      Title="Study ComplitionProgress" ShowsNavigationUI ="False">
 
     <StackPanel Background="#F2FFFA">
         <TextBlock Text="Название предмета" VerticalAlignment="Top"

@@ -3,14 +3,11 @@
 namespace SharedModel
 {
     [DataContract]
-    public class Teacher
+    public class Teacher : IDomainObject
     {
-        public Teacher(string name)
-        {
-            Name = name;
-        }
-
         [DataMember]
         public string Name { get; set; }
+        [DataMember]
+        public int Id { get; set; }
     }
 }
