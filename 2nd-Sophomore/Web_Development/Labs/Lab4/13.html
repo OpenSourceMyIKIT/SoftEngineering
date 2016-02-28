@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 13</title>
+</head>
+<body>
+  <p>Определить, сколько раз встречается минимальный элемент в последовательности. </p>
+  <input id="seq" type="text">
+  <button type="submit" onclick="Start()">Проверить</button>
+  
+  <script>
+    function Start() {
+      var str = document.getElementById('seq').value;
+      var array = JSON.parse("[" + str + "]");
+      console.log(str);
+      
+      var min = array[0];
+      var count = 0;
+      for (var i = 0; i < array.length; ++i) {
+        if (array[i] < min) min = array[i];
+      }
+      
+      for (var i = 0; i < array.length; ++i) {
+        if (array[i] == min) count++;
+      }
+      console.log(count);
+    };
+  </script>
+</body>
+</html>

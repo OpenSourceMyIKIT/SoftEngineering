@@ -1,0 +1,165 @@
+input {
+  display:none;
+}
+
+/* === BUTTON === */
+
+.nav-button {
+	position: fixed;
+	right: 0;
+	top: 0;
+	
+	background-color: rgba(255, 255, 255, 0.3);
+	-webkit-transition: ease-out .6s;
+	transition: ease-out .6s;
+  z-index: 1;
+}
+
+.nav-button label {
+	display: block;	
+	padding: 20px;
+	cursor: pointer;
+}
+
+.nav-button i {
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0.5);
+	
+	-webkit-transition: ease-out .6s;
+	transition: ease-out .6s;
+}
+
+.nav-button:hover {
+	background-color: rgb(255, 255, 255);
+	box-shadow:inset 0 0 0 1px white;
+}
+
+.nav-button:hover i {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+/* === OVERLAY === */
+
+.overlay-nav {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+	background: rgba(0,0,0,0.9);
+	opacity: 0;
+	
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	
+	z-index: -1;
+}
+
+.overlay-nav label {	
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 20px;
+	
+	text-align: center;
+	z-index: 100;
+  cursor: pointer;
+}
+
+.overlay-nav label i {
+	color: #fff;
+	font-size: 30px;
+}
+
+.overlay-nav nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay-nav ul {
+	display: inline-block;
+	height: 100%;
+	
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.overlay-nav ul li {
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay-nav ul li a {
+	display: block;
+	color: white;
+  
+	font: 700 normal 40px Lato;
+	text-decoration: none;
+  	text-transform: uppercase;
+	
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay-nav ul li a:hover,
+.overlay-nav ul li a:focus {
+	color: #849368;
+}
+
+/* CSS комбинатор, который выберет все элементы с классом .overlay,
+   которые являются братьями для элемента #op:checked, (то есть тогда когда триггер включен)   */
+
+#op:checked ~ .overlay-nav {
+	z-index: 1;
+	opacity: 1;
+}
+
+.overlay-nav nav {
+	-moz-perspective: 300px;
+}
+
+/* Базовое состояние списка */
+.overlay-nav nav ul {
+	opacity: 0.4;
+	
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Плавное выдвижение пунктов меню */
+#op:checked ~ .overlay-nav nav ul {
+	opacity: 1;	
+	-webkit-transform: translateY(0) rotateX(0deg);
+	transform: translateY(0) rotateX(0deg);
+}
+
+/* Меню прячется вниз */
+/*
+#op:not(:checked) ~ .overlay nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+	border: 3px solid red;
+}
+*/
+
+/* Исчезновение кнопки вызова меню при открытии */
+#op:checked ~ .nav-button {
+	-webkit-transition: ease-out 5s;
+	transition: ease-out 5s;
+	width: 0;
+	height: 0;
+}

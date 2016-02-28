@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 31</title>
+</head>
+<body>
+  <p>Сколько пробелов в данной последовательности символов? </p>
+  <input id="seq" type="text">
+  <button type="submit" onclick="Start()">Проверить</button>
+  
+  <script>
+    function Start() {
+      var str = document.getElementById('seq').value;
+      console.log(str);
+      
+      var count = 0;
+      for (var i = 0; i < str.length; ++i) {
+        if (str[i] === ' ') count++;
+      }; 
+      console.log(count);
+    };
+  </script>
+</body>
+</html>

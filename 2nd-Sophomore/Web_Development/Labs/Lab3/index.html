@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторная работа #3</title>
+  
+  <meta http-equiv="content-type" content="html; Charset=UTF-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald|Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/foundation/css/foundation.min.css">
+  
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  
+</head>
+<body>
+ 
+  <input type="checkbox" id="op">	
+	<div class="nav-button">
+	   <label for="op">
+	      <i class="fa fa-bars"></i>
+	   </label>
+	</div>
+	
+	<div class="overlay-nav">
+		<label for="op">
+			<i class="fa fa-times"></i>
+		</label>
+		<nav>
+			<ul>
+				<li><a href="#intro">Home</a></li>
+				<li><a href="#about">Space</a></li>
+				<li><a href="#story">Our Story</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+  <section id="intro" class="intro">
+    <div class="overlay">
+      <h1>Coworking zone</h1>
+    </div>
+    
+  </section>
+  
+  <section id="about" class="about">
+    <h2>Free Space</h2>
+    <p>Placed just in the middle of the city. An oasis for freelancers, designers, entrepreneurs and all sort of tech-guys. Reserved parking lot, cafe with a bunch of nice food (for vegans too). All registered residents are provided with free coffee.</p>
+  </section>  
+  
+  <section id="space" class="collection">
+    <div class="img-wrapper" data-reveal-id="first-img">
+      <div class="overlay">
+        <h4>Annual Code Day</h4>
+      </div>
+    <img src="img/1.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="second-img">
+      <div class="overlay">
+        <h4>Lections</h4>
+      </div>
+    <img src="img/2.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="third-img">
+      <div class="overlay">
+        <h4>Collaboration</h4>
+      </div>
+    <img src="img/3.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="fourth-img">
+      <div class="overlay">
+        <h4>Celebration</h4>
+      </div>
+    <img src="img/4.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="fifth-img">
+      <div class="overlay">
+        <h4>Our Bar</h4>
+      </div>
+    <img src="img/5.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="sixth-img">
+      <div class="overlay">
+        <h4>Art on Walls</h4>
+      </div>
+    <img src="img/6.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="seventh-img">
+      <div class="overlay">
+        <h4>Coffee</h4>
+      </div>
+    <img src="img/7.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="eighth-img">
+      <div class="overlay">
+        <h4>Cookies</h4>
+      </div>
+    <img src="img/8.jpg"></div>
+    <div class="img-wrapper" data-reveal-id="nineth-img">
+      <div class="overlay">
+        <h4>Muffins</h4>
+      </div>
+    <img src="img/9.jpg"></div>
+    
+    <div id="first-img" class="reveal-modal medium" data-reveal>
+      <img src="img/1.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="second-img" class="reveal-modal medium" data-reveal>
+      <img src="img/2.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="third-img" class="reveal-modal medium" data-reveal>
+      <img src="img/3.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="fourth-img" class="reveal-modal medium" data-reveal>
+      <img src="img/4.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="fifth-img" class="reveal-modal medium" data-reveal>
+      <img src="img/5.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="sixth-img" class="reveal-modal medium" data-reveal>
+      <img src="img/6.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="seventh-img" class="reveal-modal medium" data-reveal>
+      <img src="img/7.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="eighth-img" class="reveal-modal medium" data-reveal>
+      <img src="img/8.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="nineth-img" class="reveal-modal medium" data-reveal>
+      <img src="img/9.jpg">
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+  </section>
+  
+  <section id="location" class="location">
+    <h2>Atlanta</h2>
+    <p class="building">The Biltmore Building</p>
+    <p class="street">817 West Peachtree St, Suite 201</p>
+    <p class="post">Atlanta, GA 30308</p>
+    <p class="number">877.352.6334</p>
+  </section>
+  
+  <div id="map" style="width: 98.5vw; height: 500px"></div>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [33.78058874, -84.38339197],
+            zoom: 15
+        });
+      
+      myMap.behaviors.disable('scrollZoom');
+      
+      myPlacemark = new ymaps.Placemark([33.78058874, -84.38339197], { hintContent: 'Atlanta', balloonContent: 'Наша студия, епт' });
+    
+      myMap.geoObjects.add(myPlacemark);
+    }
+    
+    
+  </script>
+  
+  <section id="story" class="story">
+    <div class="img-wrapper">
+      <img src="img/story.jpg">
+    </div>
+    <div class="text-wrapper">
+      <h2>Our Story</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quos perspiciatis qui optio minus consequatur voluptas, velit tenetur ducimus non nostrum distinctio praesentium vero soluta minima odit similique ratione aliquid. Nemo illum voluptas, earum error odio dolor. Similique qui ea aspernatur ab itaque inventore accusantium. Facilis quaerat, omnis architecto blanditiis.</p>  
+    </div>
+  </section>
+  
+  <section id="pricing" class="pricing">
+    <h2>Our Pricing</h2>
+    <div class="price">
+      <img src="img/Learning%20gear.png">
+      <h3>1 Day - 15$</h3>
+      <p>Unlimited americano and esspreso. No seat provided.</p>
+    </div>
+    <div class="price">
+     <img src="img/Navigate.png">
+      <h3>1 Week - 59$</h3>
+      <p>Unlimited americano and esspreso. No seat provided.</p>
+    </div>
+    <div class="price">
+     <img src="img/Get%20started.png">
+      <h3>1 Month - 149$</h3>
+      <p>Unlimited americano and esspreso. Reserved seat provided.</p>
+    </div>
+  </section>
+  
+  <script>
+    $(document).foundation();
+  </script>
+  
+</body>
+</html>
