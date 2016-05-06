@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+body {
+  font: 400 normal 16px Lato, sans-serif;
+  text-align: center;
+}
+
+.intro {
+  min-width: 98vw;
+  min-height: 100vh;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+}
+
+.intro .overlay {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 98vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.intro h1 {
+  font: 400 normal 10rem Oswald;
+  color: rgba(206, 104, 104, 0.94);
+  text-transform: uppercase;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 75px 0;
+}
+
+.about h2, .about p {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  font: 400 normal 2rem Oswald;
+}
+
+.about h2:hover {
+  text-decoration: underline;
+}
+
+/* COLLECTION */
+
+.collection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.collection .img-wrapper {
+  -webkit-flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  margin: 1rem;
+  position: relative;
+}
+
+.collection .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.collection h4 {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+  color: #fff;
+  font-family: Lato;
+  
+  -webkit-transition: all 1s;  
+  transition: all 1s;
+}
+
+.collection .overlay:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.collection .overlay:hover h4 {
+  opacity: 1;
+}
+
+.collection img {
+  max-width: 100%;
+}
+
+/* PRICING */
+
+.pricing {
+/*  max-width: 86%;*/
+  margin: 1rem auto;
+  
+  display: -webkit-box;  
+  display: -webkit-flex;  
+  display: -ms-flexbox;  
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  
+  background-color: rgba(244, 46, 46, 0.6);
+  color: #fff;
+  
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pricing:hover {
+  background-color: rgba(244, 46, 46, 0.8);
+}
+
+.pricing h2 {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  
+  margin: 2rem 0;
+  
+  font: 400 normal 2rem Oswald;
+}
+
+.pricing .price {
+  -webkit-flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  
+  padding-bottom: 3rem;
+}
+
+.pricing h3 {
+  margin-top: 1rem;
+  font-family: Arial, Lato;
+}
+
+.pricing p {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 0.5rem;
+  font: 400 normal 1rem Lato;
+}
+
+/* STORY */
+
+.story {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  
+  max-width: 86%;
+  margin: 20px auto;
+}
+
+.story .img-wrapper, .story .text-wrapper {
+  -webkit-flex-basis: 48%;
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%;
+}
+
+.story .img-wrapper img {
+  max-width: 100%;
+}
+
+.story .text-wrapper {
+  text-align: left;
+}
+
+.story h2 {
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: Oswald;
+  font-size: 2rem;
+}
+
+.story h2:hover {
+  text-decoration: underline;
+}
+
+.story p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.reveal-modal {
+  padding: 3em !important;
+}
+
+/* LOCATION */
+
+.location {
+  padding: 50px 0;
+  background-color: rgba(244, 46, 46, 0.6);
+  color: #fff;
+  
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.location:hover {
+  background-color: rgba(244, 46, 46, 0.8);
+}
+
+.location h2 {
+  font: 400 normal 2srem Oswald, sans-serif;
+}
+
+.location p {
+  margin: 0.5rem;
+}
+
+.location p:hover {
+  text-decoration: underline;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  width: 50vw;  
+  max-height: 90vh;
+  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  
+  padding: 2rem;
+  padding-bottom: 0;
+  
+  background-color: #fff;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.modal i {
+  color: #070606;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.modal img {
+  max-width: 100%;
+}
+
+.modal h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal.open {
+  visibility: visible;
+}
+
+/* SUBSCRIPTION */
+
+.subscription {
+  border: 1px solid red;
+  
+}
+
+form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+form input {
+  border: 1px solid black;
+  width: 100%;
+  height: 30px;
+}
